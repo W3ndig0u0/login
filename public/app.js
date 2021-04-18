@@ -20,13 +20,14 @@ signOutBtn.onclick = () => auth.signOut();
 auth.onAuthStateChanged(user => {
     if (user) {
         // signed in
-        whenSignedIn.hidden = false;
-        whenSignedOut.hidden = true;
+        whenSignedIn.className = "not-hidden";
+        whenSignedOut.className = "hidden";
         userDetails.innerHTML = `<h3>Hello ${user.displayName}!</h3> <p>User ID: ${user.uid}</p>`;
-    } else {
+    } 
+    else {
         // not signed in
-        whenSignedIn.hidden = true;
-        whenSignedOut.hidden = false;
+        whenSignedIn.className = "hidden";
+        whenSignedOut.className = "not-hidden";
         userDetails.innerHTML = '';
     }
 });
