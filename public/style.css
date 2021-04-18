@@ -37,15 +37,15 @@ h1 {
 }
 
 h3 {
-  position: absolute;
-  left: 35%;
-  top: 50%;
+  position: relative;
+  /* left: 35%;
+  top: 50%; */
 }
 
 p {
-  position: absolute;
-  left: 35%;
-  top: 60%;
+  position: relative;
+  /* left: 35%;
+  top: 60%; */
 }
 
 button {
